@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia Elements</title>
+</head>
+<body>
+    <h1>HTML Multimedia Examples</h1>
+
+    <h2>Images</h2>
+    <img src="/api/placeholder/300/200" alt="Sample Image" width="300" height="200">
+    <br>
+    <img src="/api/placeholder/150/150" alt="Small Image" width="150" height="150">
+
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video</h2>
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        Your browser does not support the video element.
+    </video>
+
+    <h2>IFrame</h2>
+    <iframe src="about:blank" width="300" height="200" title="iframe example"></iframe>
+
+    <h2>Figure with Caption</h2>
+    <figure>
+        <img src="/api/placeholder/400/300" alt="Figure Example" width="400" height="300">
+        <figcaption>This is a figure caption</figcaption>
+    </figure>
+
+    <h2>Picture Element</h2>
+    <picture>
+        <source media="(min-width: 650px)" srcset="/api/placeholder/600/400">
+        <source media="(min-width: 465px)" srcset="/api/placeholder/400/300">
+        <img src="/api/placeholder/300/200" alt="Responsive Image" style="width:auto;">
+    </picture>
+</body>
+</html>

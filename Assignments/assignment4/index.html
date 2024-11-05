@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CSS Properties Example</title>
+        <style>
+            /* Text Styling */
+            .text-styling {
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                color: #333;
+                text-align: center;
+                text-decoration: underline;
+                line-height: 1.5;
+                letter-spacing: 1px;
+            }
+
+            /* Box Model */
+            .box-model {
+                width: 200px;
+                height: 100px;
+                padding: 20px;
+                margin: 10px;
+                border: 2px solid #000;
+                border-radius: 10px;
+            }
+
+            /* Background */
+            .background {
+                background-color: #f0f0f0;
+                background-image: linear-gradient(to right, #f0f0f0, #ddd);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            /* Positioning */
+            .position-relative {
+                position: relative;
+                top: 10px;
+                left: 20px;
+            }
+
+            .position-absolute {
+                position: absolute;
+                top: 50px;
+                right: 30px;
+            }
+
+            /* Display and Layout */
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+
+            /* Transitions and Animations */
+            .transition {
+                transition: all 0.3s ease-in-out;
+            }
+
+            .transition:hover {
+                transform: scale(1.1);
+            }
+
+            @keyframes slide {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(100px);
+                }
+            }
+
+            .animation {
+                animation: slide 2s infinite alternate;
+            }
+
+            /* Responsive Design */
+            @media screen and (max-width: 768px) {
+                .responsive {
+                    width: 100%;
+                    font-size: 14px;
+                }
+            }
+
+            /* Shadows and Effects */
+            .effects {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+                opacity: 0.9;
+                filter: brightness(1.1);
+            }
+
+            /* Lists and Tables */
+            ul.styled {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            table.styled {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            table.styled td {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            /* Forms */
+            input.styled {
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                outline: none;
+            }
+
+            input.styled:focus {
+                border-color: #007bff;
+                box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            }
+
+            /* Links */
+            a.styled {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+            a.styled:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Properties Example</h1>
+
+        <div class="text-styling">
+            This text demonstrates various text styling properties
+        </div>
+
+        <div class="box-model background">Box Model Example</div>
+
+        <div class="position-relative">Relative Position</div>
+
+        <div class="flex-container">
+            <div>Flex Item 1</div>
+            <div>Flex Item 2</div>
+            <div>Flex Item 3</div>
+        </div>
+
+        <div class="grid-container">
+            <div>Grid Item 1</div>
+            <div>Grid Item 2</div>
+            <div>Grid Item 3</div>
+        </div>
+
+        <div class="transition effects">Hover over me</div>
+
+        <div class="animation">Animated element</div>
+
+        <div class="responsive">This element is responsive</div>
+
+        <ul class="styled">
+            <li>Styled List Item 1</li>
+            <li>Styled List Item 2</li>
+        </ul>
+
+        <table class="styled">
+            <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+            </tr>
+        </table>
+
+        <input type="text" class="styled" placeholder="Styled Input" />
+
+        <a href="#" class="styled">Styled Link</a>
+    </body>
+</html>
